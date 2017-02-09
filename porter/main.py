@@ -1,6 +1,6 @@
-from rules import *
-from stemmer import *
-from steps import *
+from . import *
+from porter.stemmer import *
+from porter.steps import *
 
 import re
 import collections
@@ -20,6 +20,7 @@ def DoAll(stemmer):
         if stem == stemmer.stem:
             break
         # print(stemmer)
+<<<<<<< HEAD
     return stemmer
 
 # prying prying pry
@@ -30,3 +31,7 @@ if __name__ == "__main__":
     print(stemmer.__dict__)
     DoAll(stemmer)
     print(stemmer.__dict__)
+=======
+    return stemmer\
+
+>>>>>>> 5af9a09c4567b4675eb3d6c9f9c4a52ff72a3b73
